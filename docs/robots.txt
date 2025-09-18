@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://aeditworks.github.io/alu-vista-business/sitemap.xml
+
+# Allow all search engines to crawl our site
+# ALU VISTA - Premium UPVC Windows, Aluminum Doors, Glass Solutions Delhi
+# AeditWorks - Digital Solutions and Creative Services
