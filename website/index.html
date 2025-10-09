@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ALU VISTA – Luxury Homepage (Beginner-friendly, commented) -->
   <!-- SEO essentials -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ALU VISTA | Premium uPVC & Luxury Aluminium Windows, Doors, Designer Glass Railings – Paschim Vihar, Delhi</title>
-  <meta name="description" content="ALU VISTA delivers premium, luxury uPVC & aluminium windows and doors, designer glass railings, shower enclosures, and bespoke interior/exterior glazing in Paschim Vihar, Delhi. White-glove installation, noise reduction, energy efficiency." />
-  <meta name="keywords" content="Paschim Vihar Delhi premium windows, luxury aluminium doors, designer glass railings, uPVC windows Delhi, slim profile windows Syncro Sliding, telescopic sliding doors, shower enclosure Delhi, premium glazing, bespoke aluminium systems, West Delhi luxury windows" />
+  <title>ALU VISTA | Premium uPVC & Luxury Aluminium Windows, Doors, Designer Glass Railings – Delhi • NCR</title>
+  <meta name="description" content="ALU VISTA delivers premium, luxury uPVC & aluminium windows and doors, designer glass railings, shower enclosures, and bespoke interior/exterior glazing in Delhi • NCR. White-glove installation, noise reduction, energy efficiency." />
+  <meta name="keywords" content="Delhi NCR premium windows, luxury aluminium doors, designer glass railings, uPVC windows Delhi, modern windows NCR, premium glazing Delhi, luxury home renovation, elegant aluminium systems, contemporary window design, bespoke aluminium systems, premium luxury products, high-end windows Delhi NCR" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://aeditworks.github.io/alu-vista-business/website/index.html" />
-
   <!-- Open Graph for social previews -->
   <meta property="og:title" content="ALU VISTA | Premium Windows & Luxury Doors" />
-  <meta property="og:description" content="Luxury uPVC & aluminium systems and designer glass in Paschim Vihar, Delhi." />
+  <meta property="og:description" content="Luxury uPVC & aluminium systems and designer glass in Delhi • NCR." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/hero-luxe.jpg" />
+  <meta property="og:image" content="website/images/aluvista-logo.png" />
   <meta property="og:url" content="https://aeditworks.github.io/alu-vista-business/website/index.html" />
-
   <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "ALU VISTA - UPVC AND ALUMINIUM",
-    "image": ["images/logo.png","images/hero-luxe.jpg"],
-    "address": {"@type": "PostalAddress", "streetAddress": "Paschim Vihar", "addressLocality": "New Delhi", "addressRegion": "Delhi", "postalCode": "110063", "addressCountry": "IN"},
-    "areaServed": "Delhi NCR",
+    "image": ["website/images/aluvista-logo.png"],
+    "address": {"@type": "PostalAddress", "streetAddress": "Delhi", "addressLocality": "New Delhi", "addressRegion": "Delhi", "postalCode": "110000", "addressCountry": "IN"},
+    "areaServed": "Delhi • NCR",
     "url": "https://aeditworks.github.io/alu-vista-business/website/index.html",
     "telephone": "+91-9999208072",
     "priceRange": "₹₹₹",
@@ -35,182 +32,143 @@
     "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"120"}
   }
   </script>
-
-  <!-- Performance: Preload hero image -->
-  <link rel="preload" href="images/hero-luxe.jpg" as="image" />
-
-  <!-- Minimal, fast styles with luxury feel -->
+  <!-- Performance: Preload logo -->
+  <link rel="preload" href="website/images/aluvista-logo.png" as="image" />
+  <!-- Modern, elegant styles with luxury feel -->
   <style>
     :root{--ink:#0f1115;--muted:#646a77;--bg:#fff;--soft:#f6f6fb;--gold:#c8a96a;--gold-2:#b18b40;--line:#ececf2;--shadow:0 12px 30px rgba(0,0,0,.08);--radius:16px}
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;line-height:1.6}
     img{max-width:100%;height:auto;display:block}
-    a{color:var(--ink);text-decoration:none}
+    a{color:var(--ink);text-decoration:none;transition:opacity 0.2s}
     a:hover{opacity:.9}
-
     /* Header */
-    .topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+    .topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.04)}
     .nav{max-width:1200px;margin:auto;display:flex;align-items:center;gap:16px;padding:12px 16px}
     .logo{display:flex;align-items:center;gap:12px;font-weight:800}
-    .logo img{width:44px;height:44px;object-fit:contain}
-    .nav-links{margin-left:auto;display:flex;gap:22px}
-    .btn-primary{background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-weight:800;border:1px solid #000}
-    .btn-outline{border:1px solid var(--ink);padding:10px 16px;border-radius:999px;font-weight:700}
-
+    .logo img{width:50px;height:50px;object-fit:contain}
+    .nav-links{margin-left:auto;display:flex;gap:22px;align-items:center}
+    .btn-primary{background:var(--ink);color:#fff;padding:12px 24px;border-radius:999px;font-weight:700;border:none;cursor:pointer;font-size:16px;transition:transform 0.2s}
+    .btn-primary:hover{transform:scale(1.05)}
+    .btn-outline{border:2px solid var(--ink);padding:10px 20px;border-radius:999px;font-weight:700;background:transparent;cursor:pointer;transition:all 0.2s}
+    .btn-outline:hover{background:var(--ink);color:#fff}
     /* Hero */
-    .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:36px;max-width:1200px;margin:0 auto;padding:40px 16px}
-    .overline{color:var(--gold-2);font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-    h1{font-family:ui-serif, Georgia, Cambria, "Times New Roman", serif;font-weight:800;line-height:1.05;font-size:clamp(30px,5vw,48px);margin:10px 0}
-    .lead{color:#3a3d45;font-size:clamp(15px,2.5vw,18px)}
-    .badges{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 24px}
-    .badge{background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:13px}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;max-width:1200px;margin:0 auto;padding:60px 16px}
+    .hero-content{}
+    .overline{color:var(--gold-2);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:14px;margin-bottom:16px}
+    .hero h1{font-size:3.5rem;font-weight:900;line-height:1.1;margin:0 0 24px 0;color:var(--ink)}
+    .hero p{font-size:1.25rem;color:var(--muted);margin-bottom:32px}
+    .hero-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+    .hero-cta .phone{font-size:1.5rem;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:8px}
+    .hero-cta .phone-secondary{font-size:1.1rem;font-weight:700;color:var(--muted)}
     .hero-media{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-    .call-primary{background:var(--gold);color:#111;border:none;padding:12px 18px;border-radius:999px;font-weight:900}
-    .call-secondary{border:1px dashed var(--gold);color:#111;padding:10px 14px;border-radius:999px;font-weight:700;background:#fff}
-
-    /* Sections */
-    section{padding:60px 16px}
-    .wrap{max-width:1200px;margin:auto}
-    h2.section-title{font-family:ui-serif, Georgia, Cambria, serif;font-size:clamp(22px,4vw,34px);margin:0 0 8px}
-    .section-sub{color:#4b4f58;margin:0 0 26px}
-
-    /* Cards & grids */
-    .grid{display:grid;gap:18px}
-    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
-    .grid.cols-4{grid-template-columns:repeat(4,1fr)}
-    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-3,.grid.cols-4{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:600px){.grid.cols-3,.grid.cols-4{grid-template-columns:1fr}}
-    .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
-    .card h3{margin:6px 0 6px;font-size:18px}
-    .card p{color:#5b5f69;font-size:14px}
-    .card img{border-radius:10px;margin-bottom:12px}
-
-    /* Gallery */
-    .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
-    .g{border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
-    .t2{grid-column:span 6}.t1{grid-column:span 3}
-    @media(max-width:800px){.t2{grid-column:span 12}.t1{grid-column:span 6}}
-    @media(max-width:520px){.t1{grid-column:span 12}}
-
-    /* Testimonials */
-    .testimonial{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
-    .quote{font-style:italic}
-
-    /* Contact */
-    .contact{background:linear-gradient(180deg,#fafafc,#fff)}
-    .contact-cards{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
-    @media(max-width:900px){.contact-cards{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:560px){.contact-cards{grid-template-columns:1fr}}
-
-    form{display:grid;gap:12px;margin-top:10px}
-    .row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
-    @media(max-width:640px){.row{grid-template-columns:1fr}}
-    input, textarea, select{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit}
-    button.primary{background:var(--ink);color:#fff;border:none;padding:12px 18px;border-radius:12px;font-weight:800;cursor:pointer}
-
-    footer{border-top:1px solid var(--line);padding:20px 16px;color:#6b7280}
+    .hero-media img{width:100%;height:auto;display:block}
+    /* Products Section */
+    .products{max-width:1200px;margin:80px auto;padding:0 16px}
+    .section-title{text-align:center;font-size:2.5rem;font-weight:900;margin-bottom:48px;color:var(--ink)}
+    .product-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:32px}
+    .product-card{background:var(--soft);border-radius:var(--radius);padding:32px;text-align:center;transition:transform 0.3s, box-shadow 0.3s}
+    .product-card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+    .product-card h3{font-size:1.5rem;font-weight:800;margin:16px 0;color:var(--ink)}
+    .product-card p{color:var(--muted);font-size:1rem}
+    /* Footer */
+    .footer{background:var(--soft);padding:48px 16px;margin-top:80px}
+    .footer-content{max-width:1200px;margin:0 auto;text-align:center}
+    .footer-contact{margin-bottom:32px}
+    .footer-contact h3{font-size:1.8rem;font-weight:800;margin-bottom:16px;color:var(--ink)}
+    .footer-phone{font-size:1.8rem;font-weight:900;color:var(--ink);margin:12px 0}
+    .footer-phone-secondary{font-size:1.3rem;font-weight:700;color:var(--muted);margin:8px 0}
+    .footer-email{font-size:1.1rem;color:var(--muted);margin:8px 0}
+    .footer-email a{color:var(--gold-2);text-decoration:none;font-weight:600}
+    .footer-social{margin:24px 0}
+    .footer-social a{display:inline-block;margin:0 12px;font-size:1.1rem;color:var(--gold-2);font-weight:700}
+    .footer-location{font-size:1.2rem;font-weight:700;color:var(--ink);margin:16px 0}
+    .footer-credit{font-size:0.85rem;color:var(--muted);margin-top:24px}
+    /* Responsive */
+    @media (max-width: 768px){
+      .hero{grid-template-columns:1fr;padding:40px 16px}
+      .hero h1{font-size:2.5rem}
+      .nav-links{display:none}
+      .logo img{width:40px;height:40px}
+      .product-grid{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
-  <!-- Header with Instagram link (no GitHub shown) -->
-  <header class="topbar" role="banner">
-    <nav class="nav" aria-label="Primary">
-      <a class="logo" href="#top" aria-label="ALU VISTA Home">
-        <img src="images/logo.png" alt="ALU VISTA logo" />
+  <!-- Header -->
+  <header class="topbar">
+    <nav class="nav">
+      <div class="logo">
+        <img src="website/images/aluvista-logo.png" alt="ALU VISTA Logo" />
         <span>ALU VISTA</span>
-      </a>
-      <div class="nav-links" role="navigation">
-        <a href="#services">Services</a>
-        <a href="#products">Premium Products</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#why">Why Us</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="https://instagram.com/aeditworks" target="_blank" rel="noopener" aria-label="Instagram @aeditworks">Instagram</a>
-        <a href="#contact" class="btn-primary">Get Quote</a>
+      </div>
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+919999208072" class="btn-primary">📞 Call Now</a>
       </div>
     </nav>
   </header>
 
-  <!-- Hero with luxury copy and prominent numbers -->
-  <section class="hero" id="top">
-    <div>
-      <div class="overline">Premium Windows • Luxury Doors • Designer Glass</div>
-      <h1>Bespoke uPVC & Aluminium Systems for Luxury Homes and Offices</h1>
-      <p class="lead">Whisper-quiet interiors, energy-efficient glazing and museum-grade finishes—crafted-to-measure in Paschim Vihar, Delhi with white-glove installation and aftercare.</p>
-      <div class="badges">
-        <span class="badge">Paschim Vihar, Delhi</span>
-        <span class="badge">Bespoke Design</span>
-        <span class="badge">Precision Installation</span>
-        <span class="badge">4.9★ Google-rated</span>
-      </div>
-      <div class="cta-row" aria-label="Primary contact actions">
-        <!-- Primary: WhatsApp/Call 9999208072 -->
-        <a class="call-primary" href="https://wa.me/919999208072" target="_blank" rel="noopener">WhatsApp/Call: 9999208072</a>
-        <!-- Secondary: 7860898913 -->
-        <a class="call-secondary" href="tel:+917860898913" aria-label="Call secondary number">Call: 7860898913</a>
-        <a class="btn-outline" href="#contact">Request a Free Site Visit</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="overline">Premium Luxury Products</div>
+      <h1>Modern Elegance for Your Home</h1>
+      <p>Premium uPVC & aluminium windows, luxury doors, designer glass railings, and bespoke glazing solutions for Delhi • NCR.</p>
+      <div class="hero-cta">
+        <div>
+          <div class="phone">📞 <a href="tel:+919999208072">9999208072</a></div>
+          <div class="phone-secondary">📱 <a href="tel:+917860898913">7860898913</a></div>
+        </div>
+        <a href="https://wa.me/919999208072" class="btn-outline">💬 WhatsApp</a>
       </div>
     </div>
     <div class="hero-media" aria-label="Luxury installation banner">
-      <img src="images/hero-luxe.jpg" alt="Luxury aluminium and uPVC window installation by ALU VISTA" />
+      <img src="website/images/aluvista-logo.png" alt="ALU VISTA - Premium Luxury Products" />
     </div>
   </section>
 
-  <!-- Services: detailed premium descriptions with images -->
-  <section id="services">
-    <div class="wrap">
-      <h2 class="section-title">Luxury Services</h2>
-      <p class="section-sub">Comprehensive glazing solutions for premium residences and refined commercial spaces in West Delhi & NCR.</p>
-      <div class="grid cols-3">
-        <!-- UPVC & System Aluminium -->
-        <div class="card">
-          <img src="images/service-upvc-aluminium.jpg" alt="Premium uPVC and aluminium windows and doors" loading="lazy">
-          <h3>uPVC & System Aluminium Doors/Windows</h3>
-          <p>Casement and sliding systems engineered for silence, airtightness and longevity. Multi-chamber uPVC and thermal-break aluminium profiles paired with multi-point locking, EPDM gaskets and premium hardware—delivering superior insulation and a luxury finish.</p>
-        </div>
-        <!-- Slim profile advanced systems -->
-        <div class="card">
-          <img src="images/service-slim-profile.jpg" alt="Slim profile Syncro and telescopic sliding systems" loading="lazy">
-          <h3>Slim Profile Advanced Systems</h3>
-          <p>Ultra-minimal frames with expansive glass—Syncro Sliding, telescopic sliding, and pocket systems. Engineered tracks and concealed hardware create seamless transitions between indoor and outdoor spaces for a designer, contemporary aesthetic.</p>
-        </div>
-        <!-- Shower/Bathroom enclosures -->
-        <div class="card">
-          <img src="images/service-shower.jpg" alt="Designer shower enclosure glass partitions" loading="lazy">
-          <h3>Shower & Bathroom Enclosures</h3>
-          <p>Custom shower cabins with toughened glass, water-tight seals and high-polish fittings. Options include swing, sliding and corner enclosures for spa-like bathrooms that balance safety with luxury.</p>
-        </div>
-        <!-- Glass Railings -->
-        <div class="card">
-          <img src="images/service-railing.jpg" alt="Frameless designer glass railings for balconies and stairs" loading="lazy">
-          <h3>Designer Glass Railings</h3>
-          <p>Frameless and post-mounted railings in toughened or laminated glass for balconies and staircases. Precision installation ensures stability and clear, unobstructed views with a premium feel.</p>
-        </div>
-        <!-- Custom interior/exterior solutions -->
-        <div class="card">
-          <img src="images/service-custom.jpg" alt="Custom interior and exterior aluminium glass solutions" loading="lazy">
-          <h3>Custom Interior & Exterior Solutions</h3>
-          <p>Façade glazing, skylights, office partitions and bespoke aluminium details tailored to project needs. Designed and installed with meticulous attention to alignment, sealants and finishing.</p>
-        </div>
-        <!-- Repair/Upgrade & Site measurement -->
-        <div class="card">
-          <img src="images/service-site.jpg" alt="On-site measurement and premium fitting" loading="lazy">
-          <h3>Repairs, Upgrades & Site Measurement</h3>
-          <p>Roller changes, hardware upgrades, gasket replacements and leak sealing. Fast site surveys by trained technicians with accurate BOQs for transparent, premium execution.</p>
-        </div>
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <h2 class="section-title">Our Premium Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Luxury Windows</h3>
+        <p>Premium uPVC & aluminium windows with superior insulation and modern design.</p>
+      </div>
+      <div class="product-card">
+        <h3>Designer Doors</h3>
+        <p>Elegant aluminium doors crafted for luxury homes in Delhi • NCR.</p>
+      </div>
+      <div class="product-card">
+        <h3>Glass Railings</h3>
+        <p>Contemporary designer glass railings for balconies, terraces, and staircases.</p>
+      </div>
+      <div class="product-card">
+        <h3>Bespoke Glazing</h3>
+        <p>Custom interior & exterior glazing solutions tailored to your vision.</p>
       </div>
     </div>
   </section>
 
-  <!-- Premium Products (concise) -->
-  <section id="products">
-    <div class="wrap">
-      <h2 class="section-title">Premium Products</h2>
-      <p class="section-sub">Curated configurations for luxury living—engineered for silence, safety and longevity.</p>
-      <div class="grid cols-4">
-        <div class="card"><h3>Sliding Windows</h3><p>Silky rollers, brush seals and high-clarity glass for smooth everyday luxury.</p></div>
-        <div class="card"><h3>Casement Windows</h3><p>Superior gasketing and acoustic performance—perfect for bedrooms and studies.</p></div>
-        <div class="card"><h3>Sliding & French Doors</h3><p>Grand openings with multi-point locking and designer hardware finishes.</p></div>
-        <div class="card"><h3>Tilt & Turn</h3><p>Dual-mode ventilation and effortless cleaning for premium apartments.</p></div>
-        <div class="card"><h3>Fixed Glazing</h3><p>Panor
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <div class="footer-contact">
+        <h3>Get in Touch</h3>
+        <div class="footer-phone">📞 <a href="tel:+919999208072">9999208072</a></div>
+        <div class="footer-phone-secondary">📱 <a href="tel:+917860898913">7860898913</a></div>
+        <div class="footer-email">✉️ <a href="mailto:aluvista.official@gmail.com">aluvista.official@gmail.com</a></div>
+        <div class="footer-social">
+          <a href="https://instagram.com/aeditworks" target="_blank" rel="noopener">📸 @aeditworks</a>
+        </div>
+        <div class="footer-location">📍 Delhi • NCR</div>
+      </div>
+      <div class="footer-credit">
+        <small>Created by Aeditworks</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
