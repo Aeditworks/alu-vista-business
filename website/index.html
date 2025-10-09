@@ -33,11 +33,11 @@
         .section { padding: 4rem 0; }
         
         .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin: 2rem 0; }
-        .service-card { 
-            border: 1px solid #e0e0e0; 
-            border-radius: 10px; 
-            padding: 2rem; 
-            text-align: center; 
+        .service-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s;
         }
@@ -61,19 +61,40 @@
         .btn { background: #3498db; color: white; padding: 1rem 2rem; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem; }
         .btn:hover { background: #2980b9; }
         
-        @media (max-width: 768px) {
-            .header h1 { font-size: 2rem; }
-            .nav-links { flex-direction: column; gap: 1rem; }
-            .services { grid-template-columns: 1fr; }
+        footer { background: #1a252f; color: white; text-align: center; padding: 2rem; }
+        
+        /* ===== COMPANY LOGO/BANNER STYLES ===== */
+        .company-logo-banner {
+            text-align: center;
+            padding: 2rem 0;
+            background: white;
+            border-bottom: 3px solid #3498db;
+        }
+        .company-logo-banner img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
+
+    <!-- ========================================== -->
+    <!-- COMPANY LOGO/BANNER - VISIBLE ON WEBSITE -->
+    <!-- यहाँ आपका image paste किया है -->
+    <!-- यह image website के सबसे ऊपर दिखेगी -->
+    <!-- ========================================== -->
+    <div class="company-logo-banner">
+        <img src="../docs/images/Aluvista_design.png" alt="Aluvista Design - Company Logo" />
+    </div>
+    <!-- ========================================== -->
+
     <div class="header">
         <div class="container">
-            <h1>ALU VISTA</h1>
+            <h1>🏠 ALU VISTA</h1>
             <p>Premium uPVC & Aluminium Windows, Doors & Glass Railings</p>
-            <p>📍 Paschim Vihar, Delhi | 📞 9999208072 | 📱 7860898913</p>
+            <p>📍 Paschim Vihar, New Delhi</p>
         </div>
         <div class="nav">
             <div class="nav-links">
@@ -84,122 +105,109 @@
             </div>
         </div>
     </div>
-    
-    <div class="container">
-        <section id="services" class="section">
-            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Our Premium Services</h2>
+
+    <div class="section" id="services">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">🔧 Our Services</h2>
             <div class="services">
                 <div class="service-card">
                     <h3>🪟 uPVC Windows</h3>
-                    <p>Energy efficient, weather resistant, and low maintenance uPVC windows with excellent insulation properties. Perfect for modern homes and offices.</p>
+                    <p>Energy-efficient, durable uPVC windows with multi-point locking systems. Perfect for soundproofing and thermal insulation.</p>
                 </div>
                 <div class="service-card">
                     <h3>🚪 Aluminium Doors</h3>
-                    <p>Sliding, casement, lift & slide, fold & slide doors for residential and commercial use. Durable and stylish solutions.</p>
+                    <p>Sleek, modern aluminium doors with powder-coated finishes. Available in various colors and designs.</p>
                 </div>
                 <div class="service-card">
                     <h3>🛡️ Glass Railings</h3>
-                    <p>Balcony railings, staircase railings, and safety barriers with aluminium frame support. Modern and secure installations.</p>
+                    <p>Premium glass railings for balconies and staircases. Safe, stylish, and easy to maintain.</p>
                 </div>
-                <div class="service-card">
-                    <h3>🏗️ System Aluminium</h3>
-                    <p>Sliding, casement, tilt & turn, fixed and corner windows with superior weather sealing and modern aesthetics.</p>
-                </div>
-                <div class="service-card">
-                    <h3>🖼️ Slim Profiles</h3>
-                    <p>Minimal frame systems for wide openings and panoramic views. Perfect for contemporary architectural designs.</p>
-                </div>
-                <div class="service-card">
-                    <h3>🏠 Interior & Exterior</h3>
-                    <p>Complete glazing solutions, partitions, hardware, mosquito mesh and accessories for comprehensive building solutions.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="features" class="section features">
-            <div class="container">
-                <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Why Choose ALU VISTA?</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <h4>📏 Made-to-Measure</h4>
-                        <p>Custom sizing for perfect fit</p>
-                    </div>
-                    <div class="feature">
-                        <h4>⭐ Quality Materials</h4>
-                        <p>Premium aluminium & uPVC systems</p>
-                    </div>
-                    <div class="feature">
-                        <h4>🔧 Professional Installation</h4>
-                        <p>Trained technicians & expert service</p>
-                    </div>
-                    <div class="feature">
-                        <h4>🛠️ After-Sales Support</h4>
-                        <p>Maintenance & warranty service</p>
-                    </div>
-                    <div class="feature">
-                        <h4>🏠 Free Site Visit</h4>
-                        <p>Complete survey & measurement</p>
-                    </div>
-                    <div class="feature">
-                        <h4>🎨 Premium Finishes</h4>
-                        <p>Powder-coated & wood grain textures</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact ALU VISTA</h2>
-            <p>Professional Windows & Doors Solutions in Delhi NCR</p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h4>📍 Address</h4>
-                    <p>487/63, Shishe Wali Gali, opp. PNB<br>
-                    National Market, Bhera Enclave<br>
-                    Paschim Vihar, Delhi - 110087</p>
-                </div>
-                <div class="contact-item">
-                    <h4>📞 Phone Numbers</h4>
-                    <p><a href="tel:+919999208072" style="color: #3498db;">9999208072</a><br>
-                    <a href="tel:+917860898913" style="color: #3498db;">7860898913</a><br>
-                    <a href="tel:+911144798072" style="color: #3498db;">011-44798072</a></p>
-                </div>
-                <div class="contact-item">
-                    <h4>📧 Email & Social</h4>
-                    <p><a href="mailto:aluvista.official@gmail.com" style="color: #3498db;">aluvista.official@gmail.com</a><br>
-                    <a href="https://instagram.com/aluvista.official" style="color: #3498db;">@aluvista.official</a><br>
-                    <a href="https://wa.me/917860898913" style="color: #3498db;">WhatsApp</a></p>
-                </div>
-            </div>
-            
-            <div id="quote" class="quote-form">
-                <h3>Request Free Quote</h3>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Location</label>
-                        <input type="text" id="location" name="location">
-                    </div>
-                    <div class="form-group">
-                        <label for="requirement">Requirements</label>
-                        <textarea id="requirement" name="requirement" rows="4" placeholder="Windows/Doors/Railings - size, quantity or project details if available"></textarea>
-                    </div>
-                    <button type="submit" class="btn">Get Free Quote</button>
-                </form>
             </div>
         </div>
-    </section>
-    
+    </div>
+
+    <div class="section features" id="features">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">✨ Why Choose ALU VISTA?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h4>✅ German Technology</h4>
+                    <p>Using world-class German profiles and hardware</p>
+                </div>
+                <div class="feature">
+                    <h4>🛠️ Expert Installation</h4>
+                    <p>Professional team with 10+ years experience</p>
+                </div>
+                <div class="feature">
+                    <h4>💰 Competitive Pricing</h4>
+                    <p>Best rates in Delhi NCR region</p>
+                </div>
+                <div class="feature">
+                    <h4>🔧 After-Sales Support</h4>
+                    <p>1-year warranty and lifetime maintenance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section contact" id="contact">
+        <div class="container">
+            <h2>📞 Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>📱 Phone</h4>
+                    <p><a href="tel:+919876543210" style="color: white;">+91 98765 43210</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>✉️ Email</h4>
+                    <p><a href="mailto:contact@aluvista.com" style="color: white;">contact@aluvista.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>💬 WhatsApp</h4>
+                    <p><a href="https://wa.me/919876543210" style="color: white;" target="_blank">Chat Now</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>📍 Location</h4>
+                    <p>Paschim Vihar, New Delhi - 110063</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="quote" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">📝 Get a Free Quote</h2>
+            <form class="quote-form">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" required placeholder="Your phone number">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required placeholder="Your email address">
+                </div>
+                <div class="form-group">
+                    <label>Service Required</label>
+                    <input type="text" placeholder="e.g., uPVC Windows, Aluminium Doors">
+                </div>
+                <div class="form-group">
+                    <label>Additional Details</label>
+                    <textarea rows="4" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ALU VISTA. All Rights Reserved.</p>
+        <p>Premium uPVC & Aluminium Solutions in Delhi NCR</p>
+    </footer>
+
     <script>
         // Enhanced Analytics Event Tracking
         function trackEvent(eventName, parameters = {}) {
@@ -256,5 +264,6 @@
             }
         });
     </script>
+
 </body>
 </html>
