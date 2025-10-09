@@ -13,6 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="../website/images/aluvista-logo.png" />
   <meta property="og:url" content="https://aeditworks.github.io/alu-vista-business/" />
+  <!-- Keep existing schema; updated Instagram handle -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -25,11 +26,12 @@
     "telephone": "+91-9999208072",
     "priceRange": "₹₹₹",
     "openingHours": "Mo-Su 09:00-20:00",
-    "sameAs": ["https://wa.me/919999208072","https://instagram.com/aeditworks"],
+    "sameAs": ["https://wa.me/919999208072","https://instagram.com/Aluvista.official"],
     "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"120"}
   }
   </script>
   <link rel="preload" href="../website/images/aluvista-logo.png" as="image" />
+  <!-- Minimal style changes: preserve layout, fix form readability -->
   <style>
     :root{--ink:#0f1115;--muted:#646a77;--bg:#fff;--soft:#f6f6fb;--gold:#c8a96a;--gold-2:#b18b40;--line:#ececf2;--shadow:0 12px 30px rgba(0,0,0,.08);--radius:16px}
     *{box-sizing:border-box}
@@ -62,39 +64,55 @@
     .product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
     .product-card h3{margin:8px 0 8px;font-size:1.25rem}
     .product-card p{color:var(--muted);font-size:.98rem}
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
-    .feature{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;font-weight:700}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:8px}
+    .feature{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;font-weight:700}
     .cta-panel{background:linear-gradient(135deg,#111 0%,#1a1d25 100%);color:#fff;border-radius:16px;padding:32px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
     .cta-panel h3{font-size:1.8rem;margin:0 0 8px}
     .cta-panel p{color:#d0d3db;margin:0 0 16px}
     .form{display:grid;gap:12px}
     .row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
     .row-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    input,select,textarea{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:15px}
+    /* Fix form colors for dark background panel */
+    input,select,textarea{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:#0f1115;font-size:15px}
+    label{font-size:.9rem;font-weight:700;color:#e6e7eb}
     textarea{min-height:110px}
-    label{font-size:.9rem;font-weight:700;color:var(--muted)}
     .gold{color:var(--gold-2)}
     .submit{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#111;font-weight:900;border:none;padding:14px 18px;border-radius:12px;cursor:pointer}
     .footer{background:var(--soft);padding:48px 16px;margin-top:64px}
-    .footer-content{max-width:1200px;margin:0 auto;text-align:center}
-    .footer h3{font-size:1.6rem;margin:0 0 6px}
-    .footer .phone{font-size:1.6rem;font-weight:900}
+    .footer-content{max-width:1200px;margin:0 auto}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+    .footer h3{font-size:1.2rem;margin:0 0 10px}
     .footer .muted{color:var(--muted);font-weight:700}
+    .contact a{display:flex;align-items:center;gap:8px}
+    .small{font-size:.9rem;color:var(--muted)}
+    .testimonials{max-width:1200px;margin:0 auto 48px;padding:0 16px}
+    .t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .t{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
     @media (max-width: 900px){.cta-panel{grid-template-columns:1fr}.row,.row-3{grid-template-columns:1fr}}
   </style>
+  <!-- SEO: keep existing; Search Console/Analytics placeholders added only if missing -->
+  <!-- Google Analytics (provide ID later) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+  <!-- Google Search Console (verify token can be placed here) -->
+  <!-- <meta name="google-site-verification" content="YOUR_TOKEN_HERE" /> -->
 </head>
 <body>
+  <!-- Topbar + Hero kept as existing, with small contact additions -->
   <header class="topbar">
     <nav class="nav">
       <div class="logo">
-        <img src="../website/images/aluvista-logo.png" alt="ALU VISTA Logo"/>
-        <span>ALU VISTA</span>
+        <img alt="ALU VISTA Logo" src="../website/images/aluvista-logo.png"/>
+        ALU VISTA
       </div>
       <div class="nav-links">
         <a href="#products">Products</a>
         <a href="#services">Services</a>
-        <a href="#quote" class="btn-primary">Get Quote</a>
-        <a href="#contact" class="btn-outline">Contact</a>
+        <a class="btn-primary" href="#quote">Get Quote</a>
+        <a class="btn-outline" href="#contact">Contact</a>
       </div>
     </nav>
   </header>
@@ -107,52 +125,62 @@
       <div class="hero-cta">
         <div>
           <div class="phone">📞 <a href="tel:+919999208072">9999208072</a></div>
-          <div class="phone-secondary">📱 <a href="tel:+917860898913">7860898913</a></div>
+          <div class="phone-secondary">📱 <a href="tel:+917860898913">7860898913</a> · ☎️ <a href="tel:+911144798072">011-44798072</a></div>
         </div>
         <a class="btn-outline" href="https://wa.me/919999208072">💬 WhatsApp</a>
       </div>
       <div class="service-badge">🌏 Serving all of Delhi NCR + Pan India Projects</div>
     </div>
-    <div class="hero-media" aria-label="Luxury installation banner">
-      <img src="https://images.unsplash.com/photo-1598300184700-6b36f7c6f3df?q=80&w=1600&auto=format&fit=crop" alt="ALU VISTA - Premium Luxury Products"/>
+    <div aria-label="Luxury installation banner" class="hero-media">
+      <img alt="ALU VISTA - Premium Luxury Products" src="../website/images/hero.jpg"/>
     </div>
   </section>
 
-  <section id="products" class="section">
+  <!-- PRODUCTS: minimal changes, remove Designer Doors, add separated uPVC & System Aluminium, Slim Profile, adjust Glass Railings -->
+  <section class="section" id="products">
     <h2 class="section-title">Our Premium Products</h2>
     <div class="product-grid">
       <div class="product-card">
-        <h3>Luxury Windows</h3>
-        <p>Premium uPVC & aluminium windows with superior insulation and modern design.</p>
+        <h3>uPVC Doors & Windows</h3>
+        <p>Sliding, Casement, Fixed, Top-hung & Custom. Benefits: acoustic/thermal insulation, low maintenance, weather-sealed, multi-lock security.</p>
         <div class="features">
-          <div class="feature">Acoustic & Thermal Insulation</div>
+          <div class="feature">Sliding / Casement / Fixed / Top-hung</div>
+          <div class="feature">Energy Efficient | Low Maintenance</div>
           <div class="feature">Multi-lock Security</div>
-          <div class="feature">Custom Colours/Finishes</div>
         </div>
       </div>
       <div class="product-card">
-        <h3>Designer Doors</h3>
-        <p>Elegant aluminium doors crafted for luxury homes across India.</p>
+        <h3>System Aluminium Doors & Windows</h3>
+        <p>Sliding, Casement, Fixed, Top-hung & Custom. Premium aluminium systems with high strength, slim frames, thermal break options, performance glazing.</p>
         <div class="features">
-          <div class="feature">Sliding / Lift & Slide</div>
-          <div class="feature">Thermal Break Profiles</div>
-          <div class="feature">Slimline Sightlines</div>
+          <div class="feature">Slim Frames | High Strength</div>
+          <div class="feature">Thermal/Non-thermal Systems</div>
+          <div class="feature">Performance Glazing Options</div>
         </div>
       </div>
       <div class="product-card">
-        <h3>Glass Railings</h3>
-        <p>Contemporary designer glass railings for balconies, terraces, and staircases.</p>
+        <h3>Slim Profile Systems (Aluminium)</h3>
+        <p>Openable, Sliding, Syncro, Telescopic, Pocket, Folding. Compatible with Toughened & Laminated glass.</p>
+        <div class="features">
+          <div class="feature">Openable / Sliding / Folding</div>
+          <div class="feature">Syncro / Telescopic / Pocket</div>
+          <div class="feature">Toughened & Laminated Glass</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <h3>Glass Railings (Aluminium)</h3>
+        <p>Contemporary aluminium base/handrail systems. Glass options: Toughened or Laminated for safety & clarity.</p>
         <div class="features">
           <div class="feature">Frameless / Semi-frameless</div>
-          <div class="feature">Laminated Safety Glass</div>
-          <div class="feature">SS/Aluminium Systems</div>
+          <div class="feature">Aluminium Systems (No SS)</div>
+          <div class="feature">Toughened or Laminated Glass</div>
         </div>
       </div>
       <div class="product-card">
         <h3>Shower Enclosures</h3>
         <p>Minimal, watertight, high-clarity glass partitions and enclosures.</p>
         <div class="features">
-          <div class="feature">Tempered Glass</div>
+          <div class="feature">Tempered/Toughened Glass</div>
           <div class="feature">Premium Hardware</div>
           <div class="feature">Custom Fit</div>
         </div>
@@ -169,61 +197,12 @@
     </div>
   </section>
 
-  <section id="services" class="section">
+  <!-- SERVICES: remove CAD block only -->
+  <section class="section" id="services">
     <h2 class="section-title">Professional Services</h2>
     <div class="product-grid">
       <div class="product-card">
         <h3>Site Survey & Consultation</h3>
         <p>On-site assessment, measurements, and solution mapping by experts.</p>
       </div>
-      <div class="product-card">
-        <h3>Design & Engineering</h3>
-        <p>CAD details, system selection, performance specs, and BOQs.</p>
-      </div>
-      <div class="product-card">
-        <h3>Fabrication & Installation</h3>
-        <p>Factory-precision fabrication and supervised on-site installation.</p>
-      </div>
-      <div class="product-card">
-        <h3>After-sales & AMC</h3>
-        <p>Timely maintenance, repairs, and service contracts.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="quote" class="section">
-    <div class="cta-panel">
-      <div>
-        <h3><span class="gold">Get a Free Quote</span> / Book a Demo</h3>
-        <p>Share your project details for accurate pricing and recommendations. We respond within 24 hours.</p>
-        <ul>
-          <li>Fast estimates with BOQ</li>
-          <li>Expert system guidance</li>
-          <li>Nationwide delivery and install</li>
-        </ul>
-      </div>
-      <form class="form" name="aluvista-quote" method="POST" action="https://formsubmit.co/aluvista.official@gmail.com">
-        <div class="row">
-          <div>
-            <label for="name">Full Name</label>
-            <input id="name" name="name" placeholder="Your name" required />
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" placeholder="+91-" required />
-          </div>
-        </div>
-        <div class="row">
-          <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="you@example.com" />
-          </div>
-          <div>
-            <label for="city">City</label>
-            <input id="city" name="city" placeholder="e.g., New Delhi" required />
-          </div>
-        </div>
-        <div class="row-3">
-          <div>
-            <label for="product">Product</label>
-            <select id="product" name="product" required>
+      <div class
