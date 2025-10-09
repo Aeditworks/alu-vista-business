@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -9,13 +9,11 @@
   <meta name="keywords" content="ALU VISTA, uPVC windows Delhi, Aluminium doors Delhi, Paschim Vihar windows, glass railings, slim profiles, AeditWorks">
   <link rel="canonical" href="https://aeditworks.github.io/alu-vista-business/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Crect width='100%25' height='100%25' rx='24' fill='%230e1a2b'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='62' fill='%233aa0ff'%3EAV%3C/text%3E%3C/svg%3E">
-
   <!-- Open Graph -->
   <meta property="og:title" content="ALU VISTA – Windows, Doors & Glass Solutions">
   <meta property="og:description" content="Premium uPVC & Aluminium systems, slim profiles and railings. Paschim Vihar, Delhi.">
   <meta property="og:url" content="https://aeditworks.github.io/alu-vista-business/">
   <meta property="og:type" content="website">
-
   <!-- LocalBusiness JSON-LD -->
   <script type="application/ld+json">
   {
@@ -37,17 +35,16 @@
     "sameAs": ["https://instagram.com/aluvista.official"]
   }
   </script>
-
   <style>
     :root{--bg:#0e1a2b;--fg:#e9eef7;--ink:#0f1b2d;--brand:#3aa0ff;--muted:#7f8ba3;}
-    *{box-sizing:border-box} body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;color:var(--ink);background:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;color:var(--ink);background:#fff}
     .topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 18px;background:#fff;border-bottom:1px solid #eef2f7}
     .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
     .brand .logo{width:34px;height:34px;border-radius:9px;background:var(--bg);display:grid;place-items:center;color:var(--brand);font-weight:900}
     nav a{margin:0 8px;color:#111;text-decoration:none}
     nav .cta{padding:8px 12px;border-radius:10px;border:1px solid #111}
-    .hero{padding:80px 20px;text-align:center;color:var(--fg);
-      background: radial-gradient(1200px 520px at 15% 0, #183355, #0e1a2b);}
+    .hero{padding:80px 20px;text-align:center;color:var(--fg);background:radial-gradient(1200px 520px at 15% 0, #183355, #0e1a2b);}
     .hero h1{margin:0 0 8px;font-size:42px}
     .hero p{margin:0 0 14px;color:#cfe0f7}
     .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:600}
@@ -60,180 +57,109 @@
     .card{padding:18px;border:1px solid #eef2f7;border-radius:12px;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.08)}
     .alt{background:#f8fafc}
     .swatches{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .swatch{width:40px;height:40px;border-radius:10px;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.12)}
-    .usp{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
-    .usp div{flex:1 1 200px;padding:16px;border-radius:10px;background:#fff;border:1px solid #eef2f7;text-align:center}
-    .gallery{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-    .ph{height:180px;border-radius:12px;border:2px dashed #cfd7e5;display:grid;place-items:center;color:#6a7a96;background:#f8fafc;font-weight:600}
-    .contact-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-    .contact-info{padding:20px;background:#f8fafc;border-radius:12px}
-    .contact-info p{margin:8px 0;font-weight:500}
-    .contact-info a{color:var(--brand);text-decoration:none}
-    .field{display:grid;gap:6px;margin-bottom:12px}
-    .field label{font-weight:600}
-    input,textarea{padding:12px;border:1px solid #dfe5ee;border-radius:10px;font:inherit}
-    button{padding:14px 20px;border-radius:10px;border:0;background:#111;color:#fff;font-weight:600;cursor:pointer}
-    button:hover{background:#333}
-    footer{padding:18px 20px;border-top:1px solid #eef2f7;display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;background:#fff;font-size:14px}
-    footer a{color:var(--brand);text-decoration:none}
-    @media (max-width:768px){
-      .hero h1{font-size:32px}
-      nav{display:none}
-      .badges{font-size:14px}
-      section{padding:32px 15px}
-    }
+    .swatches span{width:36px;height:36px;border-radius:6px;border:1px solid #ddd}
+    footer{padding:32px 20px;text-align:center;background:#f8fafc;border-top:1px solid #eef2f7}
+    /* ===== BEGINNER FRIENDLY: Image display fix ===== */
+    .hero-banner{width:100%;max-width:800px;height:auto;margin:20px auto;display:block;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);}
   </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <div class="logo">AV</div>
-      <div>ALU VISTA</div>
-    </div>
+  <!-- Top Navigation Bar -->
+  <div class="topbar">
+    <div class="brand"><div class="logo">AV</div> ALU VISTA</div>
     <nav>
       <a href="#products">Products</a>
-      <a href="#colors">Colors</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a class="cta" href="#contact">Get Quote</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="cta">Contact</a>
     </nav>
-  </header> 
-   <img src="images/alu-vista-hero.png" alt="ALU VISTA" style="width:100%; height:auto;">
+  </div>
 
-
+  <!-- Hero Section with Company Banner Image -->
   <section class="hero">
-    <h1>Interior & Exterior Solutions</h1>
-    <p>System Aluminium, uPVC, Slim Profiles, Glass Railings & Professional Installation in Paschim Vihar, Delhi.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px">
-      <a class="btn primary" href="tel:+919999208072">Call 9999208072</a>
-      <a class="btn ghost" href="https://wa.me/917860898913">WhatsApp 7860898913</a>
-    </div>
+    <!-- ===== BEGINNER FRIENDLY: Banner/Logo Image ===== -->
+    <!-- Using relative path from docs/index.html to docs/images/ folder -->
+    <img src="images/Aluvista_design.png" alt="ALU VISTA - Premium Windows and Doors" class="hero-banner"/>
+    
+    <h1>Premium uPVC & Aluminium Solutions</h1>
+    <p>Windows · Doors · Slim Profiles · Railings · Glass Systems</p>
+    <a href="#contact" class="btn primary">Get a Free Quote</a>
+    <a href="#products" class="btn ghost">Explore Products</a>
     <div class="badges">
-      <div>✓ Free site visit & measurement</div>
-      <div>✓ Custom fabrication</div>
-      <div>✓ Professional installation</div>
+      <span>✓ 10+ Years Experience</span>
+      <span>✓ Custom Fabrication</span>
+      <span>✓ Professional Installation</span>
     </div>
   </section>
 
+  <!-- Products Section -->
   <section id="products">
-    <h2>Products & Systems</h2>
+    <h2>Our Products</h2>
     <div class="grid">
       <div class="card">
-        <h3>System Aluminium Windows</h3>
-        <p>Sliding, casement, tilt & turn, fixed and corner windows with superior weather sealing.</p>
+        <h3>🪟 uPVC Windows</h3>
+        <p>Energy-efficient, soundproof, and low-maintenance uPVC windows in various styles.</p>
       </div>
       <div class="card">
-        <h3>Aluminium Doors</h3>
-        <p>Sliding, casement, lift & slide, fold & slide doors for residential and commercial use.</p>
+        <h3>🚪 Aluminium Doors</h3>
+        <p>Durable and modern aluminium doors for residential and commercial spaces.</p>
       </div>
       <div class="card">
-        <h3>uPVC Windows & Doors</h3>
-        <p>Energy-efficient, weather resistant, low maintenance with excellent insulation properties.</p>
+        <h3>🏢 Slim Profiles</h3>
+        <p>Sleek and contemporary slim-frame systems for a minimalist look.</p>
       </div>
       <div class="card">
-        <h3>Slim Profiles</h3>
-        <p>Minimal frame systems for wide openings and panoramic views with modern aesthetics.</p>
-      </div>
-      <div class="card">
-        <h3>Glass Railings</h3>
-        <p>Balcony railings, staircase railings, and safety barriers with aluminium frame support.</p>
-      </div>
-      <div class="card">
-        <h3>Interior & Exterior Solutions</h3>
-        <p>Complete glazing solutions, partitions, hardware, mosquito mesh and accessories.</p>
+        <h3>🛡️ Glass Railings</h3>
+        <p>Elegant glass railing solutions for balconies, staircases, and terraces.</p>
       </div>
     </div>
   </section>
 
-  <section id="colors" class="alt">
-    <h2>Colors & Hardware</h2>
-    <p>Powder-coated and anodized finishes, wood grain textures, and premium European hardware. Complete catalog available during site consultation.</p>
+  <!-- Services Section -->
+  <section id="services" class="alt">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Custom Fabrication</h3>
+        <p>Tailored solutions designed and manufactured to your specifications.</p>
+      </div>
+      <div class="card">
+        <h3>Professional Installation</h3>
+        <p>Expert installation ensuring perfect fit and lasting performance.</p>
+      </div>
+      <div class="card">
+        <h3>Consultation & Design</h3>
+        <p>Free on-site consultation and 3D design visualization.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color Options -->
+  <section>
+    <h2>Available Colors</h2>
+    <p>Choose from a wide range of premium finishes:</p>
     <div class="swatches">
-      <div class="swatch" style="background:#2f3b52" title="Anthracite Grey"></div>
-      <div class="swatch" style="background:#6b4f2a" title="Teak Wood"></div>
-      <div class="swatch" style="background:#c0c0c0" title="Silver"></div>
-      <div class="swatch" style="background:#1d1d1d" title="Black"></div>
-      <div class="swatch" style="background:#8B4513" title="Dark Oak"></div>
-      <div class="swatch" style="background:#F5F5DC" title="Cream"></div>
+      <span style="background:#fff" title="White"></span>
+      <span style="background:#1a1a1a" title="Black"></span>
+      <span style="background:#8b7355" title="Wood Finish"></span>
+      <span style="background:#a8a8a8" title="Silver"></span>
+      <span style="background:#d4af37" title="Golden"></span>
+      <span style="background:#708090" title="Grey"></span>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Recent Projects</h2>
-    <p>Installations across homes, offices and commercial spaces in Delhi NCR.</p>
-    <div class="gallery">
-      <div class="ph">Project Photo 1</div>
-      <div class="ph">Project Photo 2</div>
-      <div class="ph">Project Photo 3</div>
-      <div class="ph">Project Photo 4</div>
-      <div class="ph">Project Photo 5</div>
-      <div class="ph">Project Photo 6</div>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="alt">
+    <h2>Get in Touch</h2>
+    <p><strong>Address:</strong> 487/63, Shishe Wali Gali, opp. PNB, National Market, Bhera Enclave, Paschim Vihar, Delhi - 110087</p>
+    <p><strong>Phone:</strong> <a href="tel:+919999208072">9999208072</a> | <a href="tel:+917860898913">7860898913</a> | <a href="tel:+911144798072">011-44798072</a></p>
+    <p><strong>Email:</strong> <a href="mailto:aluvista.official@gmail.com">aluvista.official@gmail.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/aluvista.official" target="_blank">@aluvista.official</a></p>
   </section>
 
-  <section id="about" class="alt">
-    <h2>About ALU VISTA</h2>
-    <p>We specialize in designing, fabricating and installing customized window and door systems with focus on durability, weather performance and modern aesthetics. Our experienced team provides end-to-end solutions from initial survey to final installation and after-sales support.</p>
-    <div class="usp">
-      <div><strong>Made-to-Measure</strong><br>Custom sizing for perfect fit</div>
-      <div><strong>Quality Materials</strong><br>Premium aluminium & uPVC systems</div>
-      <div><strong>Professional Installation</strong><br>Trained technicians</div>
-      <div><strong>After-Sales Support</strong><br>Maintenance & service</div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact & Quote</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>ALU VISTA</h3>
-        <p><strong>📍 Address:</strong><br>487/63, Shishe Wali Gali, opp. PNB<br>National Market, Bhera Enclave<br>Paschim Vihar, Delhi - 110087</p>
-        <p><strong>📞 Phone:</strong><br>
-          <a href="tel:+919999208072">9999208072</a> | 
-          <a href="tel:+917860898913">7860898913</a><br>
-          <a href="tel:+911144798072">011-44798072</a>
-        </p>
-        <p><strong>📧 Email:</strong> <a href="mailto:aluvista.official@gmail.com">aluvista.official@gmail.com</a></p>
-        <p><strong>📱 Instagram:</strong> <a href="https://instagram.com/aluvista.official" target="_blank">@aluvista.official</a></p>
-      </div>
-      <form id="lead" style="padding:20px;background:#fff;border-radius:12px;border:1px solid #eef2f7">
-        <h3 style="margin-top:0">Request Quote</h3>
-        <div class="field">
-          <label>Full Name *</label>
-          <input required name="name" placeholder="Your full name">
-        </div>
-        <div class="field">
-          <label>Phone Number *</label>
-          <input required name="phone" placeholder="Your mobile number">
-        </div>
-        <div class="field">
-          <label>Location</label>
-          <input name="city" placeholder="Area, City (e.g., Paschim Vihar)">
-        </div>
-        <div class="field">
-          <label>Requirement</label>
-          <textarea name="req" placeholder="Windows/Doors/Railings - size, quantity or project details if available" rows="3"></textarea>
-        </div>
-        <button type="submit">Send Enquiry via WhatsApp</button>
-      </form>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <span>© 2025 ALU VISTA</span>
-    <span>Paschim Vihar, New Delhi - 110087</span>
-    <span>Website by <a href="https://instagram.com/aeditworks" target="_blank">AeditWorks</a></span>
+    <p>&copy; 2025 ALU VISTA. Premium uPVC & Aluminium Solutions, Paschim Vihar, Delhi.</p>
+    <p style="margin-top:8px;color:var(--muted);font-size:14px;">Powered by <a href="https://github.com/Aeditworks" target="_blank" style="color:var(--brand)">AeditWorks</a></p>
   </footer>
-
-  <script>
-    document.getElementById('lead')?.addEventListener('submit', e=>{
-      e.preventDefault();
-      const f = new FormData(e.target);
-      const msg = encodeURIComponent(
-        `🏠 ALU VISTA Enquiry\n\n👤 Name: ${f.get('name')}\n📱 Phone: ${f.get('phone')}\n📍 Location: ${f.get('city') || 'Not specified'}\n\n💬 Requirement:\n${f.get('req') || 'General enquiry'}\n\n---\nSent via website: https://aeditworks.github.io/alu-vista-business/`
-      );
-      window.open(`https://wa.me/917860898913?text=${msg}`, '_blank');
-    });
-  </script>
 </body>
 </html>
