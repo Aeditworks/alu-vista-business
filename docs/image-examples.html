@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALU VISTA - Image Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .section {
+      background: white;
+      padding: 30px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 { color: #0e1a2b; }
+    h2 { color: #3aa0ff; border-bottom: 2px solid #3aa0ff; padding-bottom: 10px; }
+    .code-comment {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 10px;
+      margin: 10px 0;
+      font-family: monospace;
+    }
+    .image-example {
+      margin: 20px 0;
+      padding: 15px;
+      border: 2px dashed #ccc;
+      background: #fafafa;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .note {
+      background: #e7f3ff;
+      border-left: 4px solid #2196F3;
+      padding: 15px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🖼️ ALU VISTA - How to Add Images</h1>
+  
+  <div class="section">
+    <h2>📋 Quick Start Guide for Beginners</h2>
+    <p><strong>Follow these simple steps:</strong></p>
+    <ol>
+      <li>Upload your image files to the <code>images</code> folder in this repository</li>
+      <li>Replace <code>sample.jpg</code> with your actual filename in the code below</li>
+      <li>Save the file and your images will appear!</li>
+    </ol>
+  </div>
+
+  <!-- ========================================= -->
+  <!-- SECTION 1: BASIC IMAGE EXAMPLE -->
+  <!-- ========================================= -->
+  <div class="section">
+    <h2>Example 1: Basic Image</h2>
+    
+    <div class="code-comment">
+      💡 CHANGE 'sample.jpg' to your image filename below:
+    </div>
+    
+    <div class="image-example">
+      <!-- TODO: Replace 'sample.jpg' with your actual image filename -->
+      <img src="images/sample.jpg" alt="Sample Image" />
+      <p><em>Caption: This is where your image will appear after you upload it</em></p>
+    </div>
+    
+    <div class="note">
+      <strong>Code used above:</strong><br>
+      <code>&lt;img src="images/sample.jpg" alt="Sample Image" /&gt;</code>
+    </div>
+  </div>
+
+  <!-- ========================================= -->
+  <!-- SECTION 2: PRODUCT IMAGES -->
+  <!-- ========================================= -->
+  <div class="section">
+    <h2>Example 2: Product Images Gallery</h2>
+    
+    <div class="code-comment">
+      💡 CHANGE these filenames to your product images:
+      <br>- product1.jpg → your first product image
+      <br>- product2.jpg → your second product image
+      <br>- product3.jpg → your third product image
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+      
+      <!-- Product Image 1 -->
+      <!-- TODO: Change 'product1.jpg' to your filename -->
+      <div class="image-example">
+        <img src="images/product1.jpg" alt="Product 1 - uPVC Window" />
+        <p><strong>Product 1</strong></p>
+      </div>
+      
+      <!-- Product Image 2 -->
+      <!-- TODO: Change 'product2.jpg' to your filename -->
+      <div class="image-example">
+        <img src="images/product2.jpg" alt="Product 2 - Aluminium Door" />
+        <p><strong>Product 2</strong></p>
+      </div>
+      
+      <!-- Product Image 3 -->
+      <!-- TODO: Change 'product3.jpg' to your filename -->
+      <div class="image-example">
+        <img src="images/product3.jpg" alt="Product 3 - Glass Railing" />
+        <p><strong>Product 3</strong></p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ========================================= -->
+  <!-- SECTION 3: HERO/BANNER IMAGE -->
+  <!-- ========================================= -->
+  <div class="section">
+    <h2>Example 3: Hero Banner Image</h2>
+    
+    <div class="code-comment">
+      💡 CHANGE 'banner.jpg' to your banner/hero image filename
+    </div>
+    
+    <div class="image-example">
+      <!-- TODO: Replace 'banner.jpg' with your banner image -->
+      <img src="images/banner.jpg" alt="ALU VISTA Banner" style="width: 100%; height: 300px; object-fit: cover;" />
+    </div>
+  </div>
+
+  <!-- ========================================= -->
+  <!-- SECTION 4: LOGO IMAGE -->
+  <!-- ========================================= -->
+  <div class="section">
+    <h2>Example 4: Logo Image</h2>
+    
+    <div class="code-comment">
+      💡 CHANGE 'logo.png' to your logo filename
+    </div>
+    
+    <div class="image-example">
+      <!-- TODO: Replace 'logo.png' with your logo image -->
+      <img src="images/logo.png" alt="ALU VISTA Logo" style="max-width: 200px;" />
+    </div>
+  </div>
+
+  <!-- ========================================= -->
+  <!-- SECTION 5: BEFORE/AFTER PROJECT IMAGES -->
+  <!-- ========================================= -->
+  <div class="section">
+    <h2>Example 5: Before & After Project Photos</h2>
+    
+    <div class="code-comment">
+      💡 CHANGE these filenames to your project photos:
+      <br>- project-before.jpg → before photo
+      <br>- project-after.jpg → after photo
+    </div>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+      
+      <!-- Before Image -->
+      <div class="image-example">
+        <!-- TODO: Change 'project-before.jpg' to your filename -->
+        <img src="images/project-before.jpg" alt="Project Before" />
+        <p><strong>Before Installation</strong></p>
+      </div>
+      
+      <!-- After Image -->
+      <div class="image-example">
+        <!-- TODO: Change 'project-after.jpg' to your filename -->
+        <img src="images/project-after.jpg" alt="Project After" />
+        <p><strong>After Installation</strong></p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ========================================= -->
+  <!-- IMPORTANT NOTES -->
+  <!-- ========================================= -->
+  <div class="section">
+    <h2>⚠️ Important Notes for Beginners</h2>
+    
+    <div class="note">
+      <strong>✅ Image Filename Rules:</strong>
+      <ul>
+        <li>No spaces in filenames (use hyphens or underscores)</li>
+        <li>Good: <code>my-window.jpg</code>, <code>product_1.png</code></li>
+        <li>Bad: <code>my window.jpg</code>, <code>product 1.png</code></li>
+      </ul>
+    </div>
+    
+    <div class="note">
+      <strong>📁 Where to Upload Images:</strong>
+      <ul>
+        <li>Go to the <code>images</code> folder in your repository</li>
+        <li>Click "Add file" → "Upload files"</li>
+        <li>Drag and drop your images or click to browse</li>
+        <li>Click "Commit changes" to save</li>
+      </ul>
+    </div>
+    
+    <div class="note">
+      <strong>🔄 How to Replace Placeholder Images:</strong>
+      <ul>
+        <li>Find lines like: <code>&lt;img src="images/sample.jpg" ... /&gt;</code></li>
+        <li>Replace <code>sample.jpg</code> with your actual filename</li>
+        <li>Keep the <code>images/</code> part before the filename</li>
+        <li>Example: Change to <code>&lt;img src="images/my-photo.jpg" ... /&gt;</code></li>
+      </ul>
+    </div>
+    
+    <div class="note">
+      <strong>📸 Supported Image Formats:</strong>
+      <ul>
+        <li>JPG/JPEG (best for photos)</li>
+        <li>PNG (best for logos with transparency)</li>
+        <li>GIF (for animated images)</li>
+        <li>SVG (for scalable graphics)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section" style="background: #e7f3ff;">
+    <h2>🎯 Next Steps</h2>
+    <ol>
+      <li><strong>Upload your images</strong> to the <code>images</code> folder</li>
+      <li><strong>Edit this file</strong> and replace all <code>sample.jpg</code>, <code>product1.jpg</code>, etc. with your actual filenames</li>
+      <li><strong>Save the changes</strong> and view your website to see the images!</li>
+    </ol>
+    <p><strong>Need help?</strong> Check the README.md file in the docs folder for more detailed instructions.</p>
+  </div>
+
+</body>
+</html>
