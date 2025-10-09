@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- SEO essentials -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ALU VISTA | Premium uPVC & Luxury Aluminium Windows, Doors, Designer Glass Railings – Delhi NCR & Pan India</title>
@@ -9,19 +8,17 @@
   <meta name="keywords" content="Delhi NCR premium windows, pan India luxury aluminium doors, designer glass railings, uPVC windows Delhi, modern windows India, premium glazing Delhi NCR, luxury home renovation, elegant aluminium systems, contemporary window design, bespoke aluminium systems, premium luxury products, high-end windows Delhi NCR, national projects" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://aeditworks.github.io/alu-vista-business/" />
-  <!-- Open Graph for social previews -->
   <meta property="og:title" content="ALU VISTA | Premium Windows & Luxury Doors – Delhi NCR & Pan India" />
   <meta property="og:description" content="Luxury uPVC & aluminium systems and designer glass. Serving Delhi NCR + pan India projects." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/aluvista-logo.png" />
+  <meta property="og:image" content="../website/images/aluvista-logo.png" />
   <meta property="og:url" content="https://aeditworks.github.io/alu-vista-business/" />
-  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "ALU VISTA - UPVC AND ALUMINIUM",
-    "image": ["images/aluvista-logo.png"],
+    "image": ["../website/images/aluvista-logo.png"],
     "address": {"@type": "PostalAddress", "streetAddress": "487/63, opp. PNB, Shishe Wali Gali, National Market, Paschim Vihar", "addressLocality": "New Delhi", "addressRegion": "Delhi", "postalCode": "110087", "addressCountry": "IN"},
     "areaServed": ["Delhi NCR", "India"],
     "url": "https://aeditworks.github.io/alu-vista-business/",
@@ -32,9 +29,7 @@
     "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"120"}
   }
   </script>
-  <!-- Performance: Preload logo -->
-  <link rel="preload" href="images/aluvista-logo.png" as="image" />
-  <!-- Modern, elegant styles with luxury feel -->
+  <link rel="preload" href="../website/images/aluvista-logo.png" as="image" />
   <style>
     :root{--ink:#0f1115;--muted:#646a77;--bg:#fff;--soft:#f6f6fb;--gold:#c8a96a;--gold-2:#b18b40;--line:#ececf2;--shadow:0 12px 30px rgba(0,0,0,.08);--radius:16px}
     *{box-sizing:border-box}
@@ -42,140 +37,193 @@
     img{max-width:100%;height:auto;display:block}
     a{color:var(--ink);text-decoration:none;transition:opacity 0.2s}
     a:hover{opacity:.9}
-    /* Header */
     .topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.04)}
     .nav{max-width:1200px;margin:auto;display:flex;align-items:center;gap:16px;padding:12px 16px}
     .logo{display:flex;align-items:center;gap:12px;font-weight:800}
     .logo img{width:50px;height:50px;object-fit:contain}
     .nav-links{margin-left:auto;display:flex;gap:22px;align-items:center}
-    .btn-primary{background:var(--ink);color:#fff;padding:12px 24px;border-radius:999px;font-weight:700;border:none;cursor:pointer;font-size:16px;transition:transform 0.2s}
-    .btn-primary:hover{transform:scale(1.05)}
-    .btn-outline{border:2px solid var(--ink);padding:10px 20px;border-radius:999px;font-weight:700;background:transparent;cursor:pointer;transition:all 0.2s}
-    .btn-outline:hover{background:var(--ink);color:#fff}
-    /* Hero */
+    .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#111;padding:12px 24px;border-radius:999px;font-weight:800;border:none;cursor:pointer;font-size:16px;box-shadow:0 6px 18px rgba(193,160,88,.35)}
+    .btn-primary:hover{filter:brightness(1.05)}
+    .btn-outline{border:2px solid var(--gold-2);color:var(--gold-2);padding:10px 20px;border-radius:999px;font-weight:800;background:transparent;cursor:pointer}
+    .btn-outline:hover{background:var(--gold-2);color:#111}
     .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;max-width:1200px;margin:0 auto;padding:60px 16px}
-    .hero-content{}
     .overline{color:var(--gold-2);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:14px;margin-bottom:16px}
-    .hero h1{font-size:3.5rem;font-weight:900;line-height:1.1;margin:0 0 24px 0;color:var(--ink)}
-    .hero p{font-size:1.25rem;color:var(--muted);margin-bottom:32px}
+    .hero h1{font-size:3.2rem;font-weight:900;line-height:1.1;margin:0 0 16px}
+    .hero p{font-size:1.15rem;color:var(--muted);margin:0 0 24px}
     .hero-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-    .hero-cta .phone{font-size:1.5rem;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:8px}
+    .hero-cta .phone{font-size:1.5rem;font-weight:900;color:var(--ink);display:flex;align-items:center;gap:8px}
     .hero-cta .phone-secondary{font-size:1.1rem;font-weight:700;color:var(--muted)}
     .hero-media{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-    .hero-media img{width:100%;height:auto;display:block}
     .service-badge{display:inline-block;padding:8px 16px;background:var(--soft);border-radius:999px;font-size:0.9rem;color:var(--muted);font-weight:600;margin-top:16px}
-    /* Products Section */
-    .products{max-width:1200px;margin:80px auto;padding:0 16px}
-    .section-title{text-align:center;font-size:2.5rem;font-weight:900;margin-bottom:48px;color:var(--ink)}
-    .product-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:32px}
-    .product-card{background:var(--soft);border-radius:var(--radius);padding:32px;text-align:center;transition:transform 0.3s, box-shadow 0.3s}
-    .product-card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
-    .product-card h3{font-size:1.5rem;font-weight:800;margin:16px 0;color:var(--ink)}
-    .product-card p{color:var(--muted);font-size:1rem}
-    /* Footer */
-    .footer{background:var(--soft);padding:48px 16px;margin-top:80px}
+    .section{max-width:1200px;margin:64px auto;padding:0 16px}
+    .section-title{text-align:center;font-size:2.2rem;font-weight:900;margin-bottom:32px}
+    .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+    .product-card{background:var(--soft);border-radius:var(--radius);padding:24px;transition:transform .3s, box-shadow .3s}
+    .product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+    .product-card h3{margin:8px 0 8px;font-size:1.25rem}
+    .product-card p{color:var(--muted);font-size:.98rem}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
+    .feature{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;font-weight:700}
+    .cta-panel{background:linear-gradient(135deg,#111 0%,#1a1d25 100%);color:#fff;border-radius:16px;padding:32px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+    .cta-panel h3{font-size:1.8rem;margin:0 0 8px}
+    .cta-panel p{color:#d0d3db;margin:0 0 16px}
+    .form{display:grid;gap:12px}
+    .row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .row-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    input,select,textarea{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:15px}
+    textarea{min-height:110px}
+    label{font-size:.9rem;font-weight:700;color:var(--muted)}
+    .gold{color:var(--gold-2)}
+    .submit{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#111;font-weight:900;border:none;padding:14px 18px;border-radius:12px;cursor:pointer}
+    .footer{background:var(--soft);padding:48px 16px;margin-top:64px}
     .footer-content{max-width:1200px;margin:0 auto;text-align:center}
-    .footer-contact{margin-bottom:32px}
-    .footer-contact h3{font-size:1.8rem;font-weight:800;margin-bottom:16px;color:var(--ink)}
-    .footer-phone{font-size:1.8rem;font-weight:900;color:var(--ink);margin:12px 0}
-    .footer-phone-secondary{font-size:1.3rem;font-weight:700;color:var(--muted);margin:8px 0}
-    .footer-email{font-size:1.1rem;color:var(--muted);margin:8px 0}
-    .footer-email a{color:var(--gold-2);text-decoration:none;font-weight:600}
-    .footer-social{margin:24px 0}
-    .footer-social a{display:inline-block;margin:0 12px;font-size:1.1rem;color:var(--gold-2);font-weight:700}
-    .footer-location{font-size:1.1rem;font-weight:600;color:var(--ink);margin:16px 0;line-height:1.6}
-    .footer-service-area{font-size:1rem;color:var(--muted);margin:12px 0;font-weight:600}
-    .footer-credit{font-size:0.85rem;color:var(--muted);margin-top:24px}
-    /* Responsive */
-    @media (max-width: 768px){
-      .hero{grid-template-columns:1fr;padding:40px 16px}
-      .hero h1{font-size:2.5rem}
-      .nav-links{display:none}
-      .logo img{width:40px;height:40px}
-      .product-grid{grid-template-columns:1fr}
-    }
+    .footer h3{font-size:1.6rem;margin:0 0 6px}
+    .footer .phone{font-size:1.6rem;font-weight:900}
+    .footer .muted{color:var(--muted);font-weight:700}
+    @media (max-width: 900px){.cta-panel{grid-template-columns:1fr}.row,.row-3{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <!-- Header -->
   <header class="topbar">
     <nav class="nav">
       <div class="logo">
-        <img src="images/aluvista-logo.png" alt="ALU VISTA Logo" />
+        <img src="../website/images/aluvista-logo.png" alt="ALU VISTA Logo"/>
         <span>ALU VISTA</span>
       </div>
       <div class="nav-links">
         <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-        <a href="tel:+919999208072" class="btn-primary">📞 Call Now</a>
+        <a href="#services">Services</a>
+        <a href="#quote" class="btn-primary">Get Quote</a>
+        <a href="#contact" class="btn-outline">Contact</a>
       </div>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
+    <div>
       <div class="overline">Premium Luxury Products</div>
       <h1>Modern Elegance for Your Home</h1>
       <p>Premium uPVC & aluminium windows, luxury doors, designer glass railings, and bespoke glazing solutions.</p>
-      <div class="service-badge">🌏 Serving all of Delhi NCR + Pan India Projects</div>
       <div class="hero-cta">
         <div>
           <div class="phone">📞 <a href="tel:+919999208072">9999208072</a></div>
           <div class="phone-secondary">📱 <a href="tel:+917860898913">7860898913</a></div>
         </div>
-        <a href="https://wa.me/919999208072" class="btn-outline">💬 WhatsApp</a>
+        <a class="btn-outline" href="https://wa.me/919999208072">💬 WhatsApp</a>
       </div>
+      <div class="service-badge">🌏 Serving all of Delhi NCR + Pan India Projects</div>
     </div>
     <div class="hero-media" aria-label="Luxury installation banner">
-      <img src="images/aluvista-logo.png" alt="ALU VISTA - Premium Luxury Products" />
+      <img src="https://images.unsplash.com/photo-1598300184700-6b36f7c6f3df?q=80&w=1600&auto=format&fit=crop" alt="ALU VISTA - Premium Luxury Products"/>
     </div>
   </section>
 
-  <!-- Products Section -->
-  <section class="products" id="products">
+  <section id="products" class="section">
     <h2 class="section-title">Our Premium Products</h2>
     <div class="product-grid">
       <div class="product-card">
         <h3>Luxury Windows</h3>
         <p>Premium uPVC & aluminium windows with superior insulation and modern design.</p>
+        <div class="features">
+          <div class="feature">Acoustic & Thermal Insulation</div>
+          <div class="feature">Multi-lock Security</div>
+          <div class="feature">Custom Colours/Finishes</div>
+        </div>
       </div>
       <div class="product-card">
         <h3>Designer Doors</h3>
         <p>Elegant aluminium doors crafted for luxury homes across India.</p>
+        <div class="features">
+          <div class="feature">Sliding / Lift & Slide</div>
+          <div class="feature">Thermal Break Profiles</div>
+          <div class="feature">Slimline Sightlines</div>
+        </div>
       </div>
       <div class="product-card">
         <h3>Glass Railings</h3>
         <p>Contemporary designer glass railings for balconies, terraces, and staircases.</p>
+        <div class="features">
+          <div class="feature">Frameless / Semi-frameless</div>
+          <div class="feature">Laminated Safety Glass</div>
+          <div class="feature">SS/Aluminium Systems</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <h3>Shower Enclosures</h3>
+        <p>Minimal, watertight, high-clarity glass partitions and enclosures.</p>
+        <div class="features">
+          <div class="feature">Tempered Glass</div>
+          <div class="feature">Premium Hardware</div>
+          <div class="feature">Custom Fit</div>
+        </div>
       </div>
       <div class="product-card">
         <h3>Bespoke Glazing</h3>
         <p>Custom interior & exterior glazing solutions tailored to your vision.</p>
+        <div class="features">
+          <div class="feature">Partitions & Skylights</div>
+          <div class="feature">Laminated/Insulated Units</div>
+          <div class="feature">Performance Coatings</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="footer-content">
-      <div class="footer-contact">
-        <h3>Get in Touch</h3>
-        <div class="footer-phone">📞 <a href="tel:+919999208072">9999208072</a></div>
-        <div class="footer-phone-secondary">📱 <a href="tel:+917860898913">7860898913</a></div>
-        <div class="footer-email">✉️ <a href="mailto:aluvista.official@gmail.com">aluvista.official@gmail.com</a></div>
-        <div class="footer-social">
-          <a href="https://instagram.com/aeditworks" target="_blank" rel="noopener">📸 @aeditworks</a>
-        </div>
-        <div class="footer-location">
-          📍 <strong>Showroom:</strong> 487/63, opp. PNB, Shishe Wali Gali,<br/>
-          National Market, Paschim Vihar, New Delhi - 110087
-        </div>
-        <div class="footer-service-area">🌏 We serve all of Delhi NCR + Pan India Projects</div>
+  <section id="services" class="section">
+    <h2 class="section-title">Professional Services</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Site Survey & Consultation</h3>
+        <p>On-site assessment, measurements, and solution mapping by experts.</p>
       </div>
-      <div class="footer-credit">
-        <small>Created by Aeditworks</small>
+      <div class="product-card">
+        <h3>Design & Engineering</h3>
+        <p>CAD details, system selection, performance specs, and BOQs.</p>
+      </div>
+      <div class="product-card">
+        <h3>Fabrication & Installation</h3>
+        <p>Factory-precision fabrication and supervised on-site installation.</p>
+      </div>
+      <div class="product-card">
+        <h3>After-sales & AMC</h3>
+        <p>Timely maintenance, repairs, and service contracts.</p>
       </div>
     </div>
-  </footer>
-</body>
-</html>
+  </section>
+
+  <section id="quote" class="section">
+    <div class="cta-panel">
+      <div>
+        <h3><span class="gold">Get a Free Quote</span> / Book a Demo</h3>
+        <p>Share your project details for accurate pricing and recommendations. We respond within 24 hours.</p>
+        <ul>
+          <li>Fast estimates with BOQ</li>
+          <li>Expert system guidance</li>
+          <li>Nationwide delivery and install</li>
+        </ul>
+      </div>
+      <form class="form" name="aluvista-quote" method="POST" action="https://formsubmit.co/aluvista.official@gmail.com">
+        <div class="row">
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" placeholder="+91-" required />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label for="city">City</label>
+            <input id="city" name="city" placeholder="e.g., New Delhi" required />
+          </div>
+        </div>
+        <div class="row-3">
+          <div>
+            <label for="product">Product</label>
+            <select id="product" name="product" required>
