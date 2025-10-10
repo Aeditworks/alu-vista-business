@@ -206,3 +206,79 @@
         <p>On-site assessment, measurements, and solution mapping by experts.</p>
       </div>
       <div class
+        <section id="quote" class="section container">
+  <h2 class="section-title">Request a Quote</h2>
+  <div class="form-wrap">
+    <form id="quoteForm" onsubmit="return sendToWhatsApp(event)">
+      <div class="grid-2">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required />
+        </div>
+        <div>
+          <label for="service">Product/Service</label>
+          <select id="service" name="service">
+            <option value="uPVC">uPVC Windows/Doors</option>
+            <option value="Aluminium">System Aluminium Windows/Doors</option>
+            <option value="Slim Profiles">Slim Profile Systems</option>
+            <option value="Glass">Designer Glass / Railings</option>
+            <option value="Shower">Shower & Bathroom Enclosures</option>
+            <option value="Glazing">Custom Interior/Exterior Glazing</option>
+            <option value="Repairs">Repairs / Measurement / BOQ</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Type your requirements in any language (Hindi/English)"></textarea>
+      </div>
+      <div class="actions">
+        <button class="btn" type="submit">Send via WhatsApp</button>
+        <a class="btn outline" href="https://wa.me/919999208072" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </form>
+    <div id="formResult" aria-live="polite" style="margin-top:10px;color:#333"></div>
+  </div>
+</section>
+
+        <footer id="contact" class="footer">
+  <div class="container footer-content">
+    <div class="footer-left">
+      <small>
+        <strong>Contact ALU VISTA:</strong>
+        <br>
+        <span>
+          Phone:
+          <a href="tel:+919999208072">9999208072</a>,
+          <a href="tel:+917860898913">7860898913</a>
+        </span>
+        <br>
+        <span>
+          Email:
+          <a href="mailto:aluvista.official@gmail.com">aluvista.official@gmail.com</a>
+        </span>
+        <br>
+        <span>
+          <img src="website/images/instagram-icon.png" alt="Instagram" style="height:16px;vertical-align:middle;margin-right:4px;">
+          <a href="https://instagram.com/aluvista.official" target="_blank" rel="noopener">@aluvista.official</a>
+        </span>
+        <br>
+        <span>
+          Address: 487/63, Opp. PNB, Shishe Wali Gali, National Market, Paschim Vihar, New Delhi - 110087
+        </span>
+      </small>
+    </div>
+    <div class="footer-right"></div>
+  </div>
+  <div style="text-align:center;margin-top:16px;">
+    <small>
+      Created by <a href="https://instagram.com/aeditworks" target="_blank" rel="noopener">Aeditworks</a>
+    </small>
+  </div>
+</footer>
+
