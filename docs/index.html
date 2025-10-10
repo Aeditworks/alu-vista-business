@@ -13,6 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="../website/images/aluvista-logo.png" />
   <meta property="og:url" content="https://aeditworks.github.io/alu-vista-business/" />
+  <!-- Keep existing schema; updated Instagram handle -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,205 +31,255 @@
   }
   </script>
   <link rel="preload" href="../website/images/aluvista-logo.png" as="image" />
+  <!-- Minimal style changes: preserve layout, fix form readability -->
   <style>
     :root{--ink:#0f1115;--muted:#646a77;--bg:#fff;--soft:#f6f6fb;--gold:#c8a96a;--gold-2:#b18b40;--line:#ececf2;--shadow:0 12px 30px rgba(0,0,0,.08);--radius:16px}
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.6}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;line-height:1.6}
     img{max-width:100%;height:auto;display:block}
-    a{color:var(--ink);text-decoration:none;transition:opacity .2s}
+    a{color:var(--ink);text-decoration:none;transition:opacity 0.2s}
     a:hover{opacity:.9}
-
-    header.topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.04)}
-    nav[aria-label="Primary"]{max-width:1200px;margin:auto;display:flex;align-items:center;gap:16px;padding:12px 16px}
+    .topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.04)}
+    .nav{max-width:1200px;margin:auto;display:flex;align-items:center;gap:16px;padding:12px 16px}
     .logo{display:flex;align-items:center;gap:12px;font-weight:800}
     .logo img{width:50px;height:50px;object-fit:contain}
     .nav-links{margin-left:auto;display:flex;gap:22px;align-items:center}
-
     .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#111;padding:12px 24px;border-radius:999px;font-weight:800;border:none;cursor:pointer;font-size:16px;box-shadow:0 6px 18px rgba(193,160,88,.35)}
     .btn-primary:hover{filter:brightness(1.05)}
     .btn-outline{border:2px solid var(--gold-2);color:var(--gold-2);padding:10px 20px;border-radius:999px;font-weight:800;background:transparent;cursor:pointer}
     .btn-outline:hover{background:var(--gold-2);color:#111}
-    .btn{display:inline-flex;align-items:center;gap:8px}
-
     .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;max-width:1200px;margin:0 auto;padding:60px 16px}
     .overline{color:var(--gold-2);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:14px;margin-bottom:16px}
-    .hero h1{font-size:3rem;font-weight:900;line-height:1.1;margin:0 0 16px}
+    .hero h1{font-size:3.2rem;font-weight:900;line-height:1.1;margin:0 0 16px}
     .hero p{font-size:1.15rem;color:var(--muted);margin:0 0 24px}
     .hero-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
     .hero-cta .phone{font-size:1.5rem;font-weight:900;color:var(--ink);display:flex;align-items:center;gap:8px}
     .hero-cta .phone-secondary{font-size:1.1rem;font-weight:700;color:var(--muted)}
     .hero-media{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-    .service-badge{display:inline-block;padding:8px 16px;background:var(--soft);border-radius:999px;font-size:.9rem;color:var(--muted);font-weight:600;margin-top:16px}
-
-    main section{max-width:1200px;margin:64px auto;padding:0 16px}
-    .section-title{text-align:center;font-size:2rem;font-weight:900;margin-bottom:32px}
-
+    .service-badge{display:inline-block;padding:8px 16px;background:var(--soft);border-radius:999px;font-size:0.9rem;color:var(--muted);font-weight:600;margin-top:16px}
+    .section{max-width:1200px;margin:64px auto;padding:0 16px}
+    .section-title{text-align:center;font-size:2.2rem;font-weight:900;margin-bottom:32px}
     .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
-    .product-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
-    .product-card h3{font-size:1.1rem;margin:12px 16px 8px}
-    .product-card p{margin:0 16px 16px;color:var(--muted)}
-
-    .cta-panel{background:#0e141b;color:#f8f9fb;border-radius:16px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
-    .cta-panel h3{margin:0 0 8px;font-size:1.4rem}
-    .cta-panel p{margin:0 0 16px;color:#d0d5dd}
-
-    form .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    label{font-weight:700}
-    input, select, textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #98a2b3;background:#fff;color:#111}
-    input::placeholder, textarea::placeholder{color:#6b7280}
-    .actions{display:flex;gap:12px;flex-wrap:wrap}
-
-    footer{border-top:1px solid var(--line);background:#fff}
-    .footer-content{max-width:1200px;margin:0 auto;padding:20px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .footer-left{display:flex;align-items:center;gap:10px;color:#555}
-
-    /* Accessibility focus */
-    a:focus, button:focus, input:focus, select:focus, textarea:focus{outline:3px solid #1a73e8;outline-offset:2px}
-
-    /* Mobile responsiveness */
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr;gap:24px}
-      .cta-panel{grid-template-columns:1fr}
-      form .grid-2{grid-template-columns:1fr}
-    }
-    @media (max-width: 700px){
-      form .grid-2{grid-template-columns:1fr}
-    }
-    @media (max-width: 600px){
-      .footer-content{flex-direction:column;gap:8px;text-align:center}
-    }
+    .product-card{background:var(--soft);border-radius:var(--radius);padding:24px;transition:transform .3s, box-shadow .3s}
+    .product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+    .product-card h3{margin:8px 0 8px;font-size:1.25rem}
+    .product-card p{color:var(--muted);font-size:.98rem}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:8px}
+    .feature{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;font-weight:700}
+    .cta-panel{background:linear-gradient(135deg,#111 0%,#1a1d25 100%);color:#fff;border-radius:16px;padding:32px;display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+    .cta-panel h3{font-size:1.8rem;margin:0 0 8px}
+    .cta-panel p{color:#d0d3db;margin:0 0 16px}
+    .form{display:grid;gap:12px}
+    .row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .row-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    /* Fix form colors for dark background panel */
+    input,select,textarea{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:#0f1115;font-size:15px}
+    label{font-size:.9rem;font-weight:700;color:#e6e7eb}
+    textarea{min-height:110px}
+    .gold{color:var(--gold-2)}
+    .submit{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#111;font-weight:900;border:none;padding:14px 18px;border-radius:12px;cursor:pointer}
+    .footer{background:var(--soft);padding:48px 16px;margin-top:64px}
+    .footer-content{max-width:1200px;margin:0 auto}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+    .footer h3{font-size:1.2rem;margin:0 0 10px}
+    .footer .muted{color:var(--muted);font-weight:700}
+    .contact a{display:flex;align-items:center;gap:8px}
+    .small{font-size:.9rem;color:var(--muted)}
+    .testimonials{max-width:1200px;margin:0 auto 48px;padding:0 16px}
+    .t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .t{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+    @media (max-width: 900px){.cta-panel{grid-template-columns:1fr}.row,.row-3{grid-template-columns:1fr}}
   </style>
+  <!-- SEO: keep existing; Search Console/Analytics placeholders added only if missing -->
+  <!-- Google Analytics (provide ID later) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+  <!-- Google Search Console (verify token can be placed here) -->
+  <!-- <meta name="google-site-verification" content="YOUR_TOKEN_HERE" /> -->
 </head>
 <body>
-  <a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
-  <header class="topbar" role="banner">
-    <nav aria-label="Primary">
-      <a class="logo" href="#" aria-label="ALU VISTA Home">
-        <img src="../website/images/aluvista-logo.png" alt="ALU VISTA logo" width="50" height="50" />
-        <span>ALU VISTA</span>
-      </a>
-      <div class="nav-links" role="navigation" aria-label="Secondary">
+  <!-- Topbar + Hero kept as existing, with small contact additions -->
+  <header class="topbar">
+    <nav class="nav">
+      <div class="logo">
+        <img alt="ALU VISTA Logo" src="../website/images/aluvista-logo.png"/>
+        ALU VISTA
+      </div>
+      <div class="nav-links">
+        <a href="#products">Products</a>
         <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-outline" href="https://wa.me/919999208072" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn-primary" href="#quote">Get Quote</a>
+        <a class="btn-outline" href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main id="main" role="main">
-    <section class="hero" aria-label="Hero">
-      <div>
-        <p class="overline">Premium Aluminium & uPVC</p>
-        <h1>Windows, Doors & Designer Glass Railings</h1>
-        <p>Trusted fabrication and installation across Delhi NCR & pan India. Visit our Paschim Vihar showroom.</p>
-        <div class="hero-cta">
-          <button class="btn btn-primary" type="button" onclick="window.location.href='mailto:aeditworks@gmail.com'">Get a Quote</button>
-          <span class="phone">📞 +91-9999208072</span>
-          <span class="phone-secondary">Mon–Sun, 10 AM – 8 PM</span>
-        </div>
-        <span class="service-badge">uPVC | System Aluminium | Slim profiles | Glass & Railings</span>
-      </div>
-      <div class="hero-media">
-        <img src="../website/images/hero.jpg" alt="Showcase of premium aluminium and uPVC window and door installations" />
-      </div>
-    </section>
-
-    <section id="services" aria-label="Products & Services">
-      <h2 class="section-title">Products & Services</h2>
-      <div class="product-grid">
-        <article class="product-card">
-          <img src="../website/images/upvc.jpg" alt="uPVC windows and doors" />
-          <h3>uPVC Windows/Doors</h3>
-          <p>Energy-efficient, low-maintenance uPVC solutions for modern homes.</p>
-        </article>
-        <article class="product-card">
-          <img src="../website/images/aluminium.jpg" alt="System aluminium doors and windows" />
-          <h3>System Aluminium Windows/Doors</h3>
-          <p>High-performance aluminium systems with premium hardware.</p>
-        </article>
-        <article class="product-card">
-          <img src="../website/images/slim.jpg" alt="Slim profile window systems" />
-          <h3>Slim Profile Systems</h3>
-          <p>Minimal sightlines with strong, elegant frames.</p>
-        </article>
-        <article class="product-card">
-          <img src="../website/images/glass.jpg" alt="Designer glass and railings" />
-          <h3>Designer Glass / Railings</h3>
-          <p>Tempered glass railings and custom glass solutions.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" aria-label="Request a callback">
-      <div class="cta-panel">
+  <section class="hero">
+    <div>
+      <div class="overline">Premium Luxury Products</div>
+      <h1>Modern Elegance for Your Home</h1>
+      <p>Premium uPVC & aluminium windows/doors,Slim Profiles, Glass railings, and bespoke glazing solutions.</p>
+      <div class="hero-cta">
         <div>
-          <h3>Tell us about your requirement</h3>
-          <p>Share your details and preferences. We will respond within 24 hours.</p>
+          <div class="phone">📞 <a href="tel:+919999208072">9999208072</a></div>
+          <div class="phone-secondary">📱 <a href="tel:+917860898913">7860898913</a> · ☎️ <a href="tel:+911144798072">011-44798072</a></div>
         </div>
-        <form id="leadForm" aria-labelledby="contactTitle" onsubmit="handleSubmit(event)">
-          <div class="grid-2">
-            <div>
-              <label for="name">Full Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required />
-            </div>
-            <div>
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" placeholder="Your phone number" required />
-            </div>
-            <div>
-              <label for="email">Email (optional)</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" />
-            </div>
-            <div>
-              <label for="service">Service</label>
-              <select id="service" name="service">
-                <option value="uPVC">uPVC Windows/Doors</option>
-                <option value="Aluminium">System Aluminium Windows/Doors</option>
-                <option value="Slim Profiles">Slim Profile Systems</option>
-                <option value="Glass">Designer Glass / Railings</option>
-                <option value="Shower">Shower & Bathroom Enclosures</option>
-                <option value="Glazing">Custom Interior/Exterior Glazing</option>
-                <option value="Repairs">Repairs / Measurement / BOQ</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type your requirements in any language (Hindi/English)"></textarea>
-          </div>
-          <div class="actions">
-            <button class="btn btn-primary" type="submit">Send via WhatsApp</button>
-            <a class="btn btn-outline" href="https://wa.me/919999208072" target="_blank" rel="noopener">Chat on WhatsApp</a>
-          </div>
-          <div id="formResult" aria-live="polite" style="margin-top:10px;color:#333"></div>
-        </form>
+        <a class="btn-outline" href="https://wa.me/919999208072">💬 WhatsApp</a>
       </div>
-    </section>
-  </main>
+      <div class="service-badge">🌏 Serving all of Delhi NCR + Pan India Projects</div>
+    </div>
+    <div aria-label="Luxury installation banner" class="hero-media">
+      <img alt="ALU VISTA - Premium Luxury Products" src="../website/images/hero.jpg"/>
+    </div>
+  </section>
 
-  <footer role="contentinfo">
-    <div class="footer-content">
-      <div class="footer-left">
-        <img src="../website/images/aluvista-logo.png" alt="ALU VISTA logo small" width="28" height="28" />
-        <span>© 2025 ALU VISTA</span>
+  <!-- PRODUCTS: minimal changes, remove Designer Doors, add separated uPVC & System Aluminium, Slim Profile, adjust Glass Railings -->
+  <section class="section" id="products">
+    <h2 class="section-title">Our Premium Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>uPVC Doors & Windows</h3>
+        <p>Sliding, Casement, Fixed, Top-hung & Custom. Benefits: acoustic/thermal insulation, low maintenance, weather-sealed, multi-lock security.</p>
+        <div class="features">
+          <div class="feature">Sliding / Casement / Fixed / Top-hung</div>
+          <div class="feature">Energy Efficient | Low Maintenance</div>
+          <div class="feature">Multi-lock Security</div>
+        </div>
       </div>
-      <div class="footer-right">
-        <a href="https://instagram.com/Aluvista.official" target="_blank" rel="noopener" aria-label="ALU VISTA on Instagram">
-          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon" style="height:16px;vertical-align:middle;margin-right:4px;" />
-          <span>@Aluvista.official</span>
-        </a>
+      <div class="product-card">
+        <h3>System Aluminium Doors & Windows</h3>
+        <p>Sliding, Casement, Fixed, Top-hung & Custom. Premium aluminium systems with high strength, slim frames, thermal break options, performance glazing.</p>
+        <div class="features">
+          <div class="feature">Slim Frames | High Strength</div>
+          <div class="feature">Thermal/Non-thermal Systems</div>
+          <div class="feature">Performance Glazing Options</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <h3>Slim Profile Systems (Aluminium)</h3>
+        <p>Openable, Sliding, Syncro, Telescopic, Pocket, Folding. Compatible with Toughened & Fluted glass.</p>
+        <div class="features">
+          <div class="feature">Openable / Sliding / Folding</div>
+          <div class="feature">Syncro / Telescopic / Pocket</div>
+          <div class="feature">Toughened & Fluted Glass</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <h3>Glass Railings (Aluminium)</h3>
+        <p>Contemporary aluminium base/handrail systems. Glass options: Toughened or Laminated for safety & clarity.</p>
+        <div class="features">
+          <div class="feature">Frameless / Semi-frameless</div>
+          <div class="feature">Aluminium Systems</div>
+          <div class="feature">Toughened or Laminated Glass</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <h3>Shower Enclosures</h3>
+        <p>Minimal, watertight, high-clarity glass partitions and enclosures.</p>
+        <div class="features">
+          <div class="feature">Tempered/Toughened Glass</div>
+          <div class="feature">Premium Hardware</div>
+          <div class="feature">Custom Fit</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <h3>Bespoke Glazing</h3>
+        <p>Custom interior & exterior glazing solutions tailored to your vision.</p>
+        <div class="features">
+          <div class="feature">Partitions & Skylights</div>
+          <div class="feature">Laminated/Insulated Units</div>
+          <div class="feature">Performance Coatings</div>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    function handleSubmit(e){
-      e.preventDefault();
-      const form = e.target;
-      const data = new FormData(form);
-      const name = encodeURIComponent(data.get('name')||'');
-      const phone = encodeURIComponent(data.get('phone')||'');
-      const email = encodeURIComponent(data.get('email')||'');
-      const service = encodeURIComponent(data.get('service')||'');
-      const message = encodeURIComponent(data.get('message')||'');
+  <!-- SERVICES: remove CAD block only -->
+  <section class="section" id="services">
+    <h2 class="section-title">Professional Services</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Site Survey & Consultation</h3>
+        <p>On-site assessment, measurements, and solution mapping by experts.</p>
+      </div>
+      <div class
+        <section id="quote" class="section container">
+  <h2 class="section-title">Request a Quote</h2>
+  <div class="form-wrap">
+    <form id="quoteForm" onsubmit="return sendToWhatsApp(event)">
+      <div class="grid-2">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required />
+        </div>
+        <div>
+          <label for="service">Product/Service</label>
+          <select id="service" name="service">
+            <option value="uPVC">uPVC Windows/Doors</option>
+            <option value="Aluminium">System Aluminium Windows/Doors</option>
+            <option value="Slim Profiles">Slim Profile Systems</option>
+            <option value="Glass">Designer Glass / Railings</option>
+            <option value="Shower">Shower & Bathroom Enclosures</option>
+            <option value="Glazing">Custom Interior/Exterior Glazing</option>
+            <option value="Repairs">Repairs / Measurement / BOQ</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Type your requirements in any language (Hindi/English)"></textarea>
+      </div>
+      <div class="actions">
+        <button class="btn" type="submit">Send via WhatsApp</button>
+        <a class="btn outline" href="https://wa.me/919999208072" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </form>
+    <div id="formResult" aria-live="polite" style="margin-top:10px;color:#333"></div>
+  </div>
+</section>
+
+        <footer id="contact" class="footer">
+  <div class="container footer-content">
+    <div class="footer-left">
+      <small>
+        <strong>Contact ALU VISTA:</strong>
+        <br>
+        <span>
+          Phone:
+          <a href="tel:+919999208072">9999208072</a>,
+          <a href="tel:+917860898913">7860898913</a>
+          <a href="tel:+911144798072">011-44798072</a>
+        </span>
+        <br>
+        <span>
+          Email:
+          <a href="mailto:aluvista.official@gmail.com">aluvista.official@gmail.com</a>
+        </span>
+        <br>
+        <span>
+          <img src="website/images/instagram-icon.png" alt="Instagram" style="height:16px;vertical-align:middle;margin-right:4px;">
+          <a href="https://instagram.com/aluvista.official" target="_blank" rel="noopener">@aluvista.official</a>
+        </span>
+        <br>
+        <span>
+          Address: 487/63, Opp. PNB, Shishe Wali Gali, National Market, Paschim Vihar, New Delhi - 110087
+        </span>
+      </small>
+    </div>
+    <div class="footer-right"></div>
+  </div>
+  <div style="text-align:center;margin-top:16px;">
+    <small>
+      Created by <a href="https://instagram.com/aeditworks" target="_blank" rel="noopener">Aeditworks</a>
+    </small>
+  </div>
+</footer>
+
